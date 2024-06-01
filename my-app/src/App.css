@@ -1,0 +1,59 @@
+/* For Firefox */
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #99ff00 #83ff6a;
+}
+
+/* src/index.css */
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #83ff6a; /* Track color */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #99ff00; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #9ac300; /* Border around thumb */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ac300; /* Thumb hover color */
+}
+
+/* For Firefox */
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #99ff00 #83ff6a;
+}
+
+
+/* App.css or a dedicated CSS file */
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 9999; /* Ensure it's above other elements */
+    max-width: 300px; /* Adjust the maximum width */
+    height: 50px;
+    word-wrap: break-word; /* Allow long messages to wrap */
+  }
+  
